@@ -4,6 +4,12 @@ This project contains the build targets that kdb+ is seen in the wild.
 
 ## Related Links
 
+ * [Kx](https://kx.com)
+     * [Why Kx?](https://kx.com/why-kx/)
+     * [Get going with kdb+](https://code.kx.com)
+ * [Docker](https://docker.com)
+     * [Google - Deploying Containers on VMs and Managed Instance Groups](https://cloud.google.com/compute/docs/containers/deploying-containers)
+
 # Conda
 
 Follow the OS specific instructions below and then run:
@@ -13,11 +19,11 @@ Follow the OS specific instructions below and then run:
     conda build conda
     conda install -y -f --use-local kdb
 
-## Linux
+## Linux and macOS
 
 You will need to have installed [Miniconda](https://conda.io/miniconda.html).
 
-If you use Docker, you can instead use:
+Users of [Docker instead can use](https://hub.docker.com/r/continuumio/miniconda3/):
 
     docker run -it -v $(pwd):/usr/src/kdb-dist continuumio/miniconda3
 
