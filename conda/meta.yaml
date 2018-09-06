@@ -1,0 +1,29 @@
+package:
+  name: kdb
+  version: "3.5.20180425"
+
+build:
+  number: 0
+
+source:
+  url: http://dls.kx.com/253h1j3s2941/download					# [linux64]
+  fn: l64.zip									# [linux64]
+  sha256: 1439065d5baa0f7d152236733beea20745feb21a43cda62c33591db4fe7a40c5	# [linux64]
+  url: http://dls.kx.com/1n3c2u0l3C1I/download					# [win64]
+  fn: w64.zip									# [win64]
+  sha256: 580ddad5c13c4b8e43fe489a8f7e25339b1b187f93064e0ba59a9dfd6b059bbb	# [win64]
+  url: http://dls.kx.com/1u3N3p2Y1D1G/download					# [osx]
+  fn: m64.zip									# [osx]
+  sha256: cd10bda1849195ebba40287c101e810e7cb146474a82e0d6ef73660bf5bba104	# [osx]
+
+# neuters unable to find libm.so.6...
+requirements:
+  build:
+    - {{ compiler('c') }}
+  run:
+    - python
+
+about:
+  home: https://kx.com
+  license: Commercial
+  summary: kdb+

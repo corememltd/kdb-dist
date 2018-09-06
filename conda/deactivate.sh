@@ -1,0 +1,2 @@
+unset QHOME
+unset QLIC
