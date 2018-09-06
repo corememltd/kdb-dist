@@ -215,7 +215,7 @@ for p in [qlic, qhome, '.']:
     break
 else:
   if not sys.stdin.isatty():
-    print('Headless detected, please refer to https://github.com/KxSystems/dockerq#headless', file=sys.stderr)
+    print('Headless detected, please refer to https://github.com/KxSystems/kdb-dist/README.docker.md#headless', file=sys.stderr)
     sys.exit(1)
   #license_ondemand_guard()
   fetch_options()
