@@ -10,4 +10,4 @@ This project contains the build targets that kdb+ is seen in the wild.
 
 # Builds
 
- * [Conda](README.conda.md)
+ * [Anaconda](README.anaconda.md)

@@ -1,4 +1,4 @@
-[kdb+](https://kx.com) Conda Distribution.
+[kdb+](https://kx.com) Anaconda Distribution.
 
 ## Related Links
 
