@@ -27,6 +27,8 @@ You will need to have installed [Visual Studio (Community edition suffices)](htt
 
 You will need to have installed [Miniconda](https://conda.io/miniconda.html).
 
-For the terminal, you open the Start Menu and search for 'Anaconda Prompt'.  Before you start the build (if you are using VS2017) you need to run:
+For the terminal, you open the Start Menu and search for 'Anaconda Prompt'.
+
+If you are using VS 2017, before you start the build you need to run:
 
     "\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\Tools\VsDevCmd.bat"
