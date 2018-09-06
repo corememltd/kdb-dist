@@ -32,7 +32,7 @@ You can use [environment variables](https://docs.docker.com/engine/reference/run
      * as inside the container [`QLIC=$HOME`](https://code.kx.com/q/tutorials/licensing/#keeping-the-license-key-file-elsewhere) you may include your `kc.lic` (or `k4.lic`) file
          * it is recommended to use [`QLIC_KC`](#on-demand-license) or [`QLIC_K4`](#commercial-license) so to decouple the licensing from your codebase
      * your upper limit for your `Q_INIT` is something short of the output from `getconf ARG_MAX` (inclusive of the base64 encoding overhead)
-         * as cloud metadata [GCE limits you to 256kB](https://cloud.google.com/compute/docs/storing-retrieving-metadata#custom_metadata_size_limitations)
+         * [GCE limits you to 256kB of metadata](https://cloud.google.com/compute/docs/storing-retrieving-metadata#custom_metadata_size_limitations)
 
 If your project code lives in the directory `mycode`, this lets you invoke `q` using:
 
