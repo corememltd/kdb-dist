@@ -8,7 +8,7 @@
 
 Follow the OS specific instructions below and then run:
 
-    conda install -y conda-build conda-verify`
+    conda install -y conda-build conda-verify
     cd /path/to/project/kdb-dist
     conda build conda
     conda install -y -f --use-local kdb
