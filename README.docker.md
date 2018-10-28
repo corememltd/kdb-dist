@@ -33,6 +33,7 @@ You can use [environment variables](https://docs.docker.com/engine/reference/run
          * it is recommended to use [`QLIC_KC`](#on-demand-license) or [`QLIC_K4`](#commercial-license) so to decouple the licensing from your codebase
      * your upper limit for your `Q_INIT` is something short of the output from `getconf ARG_MAX` (inclusive of the base64 encoding overhead)
          * [GCE limits you to 256kB of metadata](https://cloud.google.com/compute/docs/storing-retrieving-metadata#custom_metadata_size_limitations)
+         * [AWS limits you to 16kB of metadata](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html#instancedata-add-user-data)
 
 If your project code lives in the directory `mycode`, this lets you invoke `q` using:
 
