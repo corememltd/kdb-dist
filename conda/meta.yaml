@@ -1,20 +1,20 @@
 package:
   name: kdb
-  version: "3.5.20180425"
+  version: "3.6.20180614"
 
 build:
   number: 0
 
 source:
-  url: http://dls.kx.com/253h1j3s2941/download					# [linux64]
+  url: https://cl.ly/2r1v1v3h0l41/download/l64.zip				# [linux64]
   fn: l64.zip									# [linux64]
-  sha256: 1439065d5baa0f7d152236733beea20745feb21a43cda62c33591db4fe7a40c5	# [linux64]
-  url: http://dls.kx.com/1n3c2u0l3C1I/download					# [win64]
+  sha256: 28c26f796a7fa9267a3061598fe0e1e34208b4deb5932db42adc78f9d2a74481	# [linux64]
+  url: https://cl.ly/1c2r0V3G3B3y/download/w64.zip				# [win64]
   fn: w64.zip									# [win64]
-  sha256: 580ddad5c13c4b8e43fe489a8f7e25339b1b187f93064e0ba59a9dfd6b059bbb	# [win64]
-  url: http://dls.kx.com/1u3N3p2Y1D1G/download					# [osx]
+  sha256: 68e802d7d7dc8b1f95f4976cb3a34b2593134ca35a168d517d9f031a8ecd0c89	# [win64]
+  url: https://cl.ly/1l381Q1G041F/download/m64.zip				# [osx]
   fn: m64.zip									# [osx]
-  sha256: cd10bda1849195ebba40287c101e810e7cb146474a82e0d6ef73660bf5bba104	# [osx]
+  sha256: 36c85349c6fc5bdd152dfd53f5e03c3d00a225557c85ce8acd2b2bba56dafbe2	# [osx]
 
 # neuters unable to find libm.so.6...
 requirements:
