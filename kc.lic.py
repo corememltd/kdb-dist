@@ -199,6 +199,12 @@ def license_ondemand_guard():
     if uuid[0:3] == 'ec2':
       print('EC2 detected, please refer to https://code.kx.com/q/cloud/aws/', file=sys.stderr)
       sys.exit(1)
+  if os.path.isfile('/sys/devices/virtual/dmi/id/bios_vendor'):
+    with open('/sys/devices/virtual/dmi/id/bios_vendor') as file:
+      bios_vendor = file.read().strip()
+    if bios_vendor == 'Amazon EC2':
+      print('EC2 detected, please refer to https://code.kx.com/q/cloud/aws/', file=sys.stderr)
+      sys.exit(1)
 
 for el, ln in [('QLIC_K4', 'k4.lic'), ('QLIC_KC', 'kc.lic')]:
   lic = os.getenv(el)
